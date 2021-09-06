@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#header { 
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 135px;
+    left: 0px;
+    top: 0px;
+    background: #ffffff;
+}
+
+#header-line {
+    background-color: #623D7A;    
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 135px;
+
+    border: 2px solid #623D7A;
+    border-right: 0px;
+    border-left: 0px;   
+}
+
+.links-container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links {
+    color: #AB32FA;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: 0px 0px 1.5px rgba(90, 90, 90, 0.842);
+    font-family: 'Architects Daughter', cursive;
+}
+
+#main-firstbg {
+    display: flex;
+    background-color: #8728C7;
+    position: absolute;
+    width: 100%;
+    height: 810px;
+    left: 0px;
+    top: 139px;
+}
+
+#content-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.904);
+    width: 50%;
+    height: auto;
+    margin: auto;
+    
+    border: 0px solid white;
+    border-radius: 5px;
+    padding: 0px 15px 0px 15px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    
+}
+
+#searchingFields {
+    margin-bottom: 25px;
+    width: 50%;
+    align-self: center;
+    
+    border: solid 2px white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px grey;
+    box-sizing: border-box;
+    
+    text-align: center;
+    outline: none;
+}
