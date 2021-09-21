@@ -1,13 +1,13 @@
 # framework-padawan
 
 **Início**
-![image](https://user-images.githubusercontent.com/86632667/132148303-11a7729b-db7c-4d91-978e-8a550ab1cccc.png)
+![image](https://user-images.githubusercontent.com/86632667/134253554-55560fb3-81e0-4ce5-bba6-868cb5d38045.png)
 
 **Albuns**
-![image](https://user-images.githubusercontent.com/86632667/132148334-97c6c4c2-2d09-4988-bcb8-69dcc5f3ca7e.png)
+![image](https://user-images.githubusercontent.com/86632667/134253577-55e26ead-76ab-4cea-b068-39c9624dd127.png)
 
 **Postagens**
-![image](https://user-images.githubusercontent.com/86632667/132148469-12dae707-5f7d-451f-af7f-987320e59c15.png)
+![image](https://user-images.githubusercontent.com/86632667/134253609-657797c7-a402-4fb9-8805-72e97aebeb89.png)
 
 **To do**
-![image](https://user-images.githubusercontent.com/86632667/132148486-59b143e1-6a7e-4883-8ce9-f3af6ede95f2.png)
+![image](https://user-images.githubusercontent.com/86632667/134253629-d0fcfd54-a036-4d01-959b-503fe0cd6e1e.png)
