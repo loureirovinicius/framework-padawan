@@ -1,19 +1,24 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
-body {
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+*, ::after, ::before {
     margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8728C7;
 }
 
 #header { 
     display: flex;
-    position: absolute;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    
     width: 100%;
     height: 135px;
-    left: 0px;
-    top: 0px;
     background: #ffffff;
 }
 
@@ -22,12 +27,9 @@ body {
     position: absolute;
     width: 100%;
     height: 0px;
-    left: 0px;
     top: 135px;
 
-    border: 2px solid #623D7A;
-    border-right: 0px;
-    border-left: 0px;   
+    border: 2px solid #623D7A;  
 }
 
 .links-container {
@@ -48,135 +50,30 @@ body {
 
 #main-firstbg {
     display: flex;
-    background-color: #8728C7;
-    position: absolute;
-    width: 100%;
-    height: 810px;
-    left: 0px;
-    top: 139px;
+    justify-items: center;
+    align-content: center;
+    margin: 30vh;
 }
 
 #content-1 {
     background-color: rgba(255, 255, 255, 0.904);
-    width: 50%;
+    width: 50vw;
     height: auto;
     margin: auto;
     
     border: 0px solid white;
     border-radius: 5px;
-    padding: 0px 15px 0px 15px;
+    padding: 10px 15px 10px 15px;
+    box-shadow: 5px 5px 5px rgb(48, 18, 51)
 }
 
 h2 {
     text-align: center;
-  /*  color: #58BCCA; */
     font-family: 'Architects Daughter', cursive;
-    
 }
 
 p {
     text-align: justify;   
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#main-line1 {
-    background-color: #58BCCA;    
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    left: 0px;
-    top: 810px;
-
-    border: 2px solid #58BCCA;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-#main-secondbg {
-    display: flex;
-    background-color: #58BAC7;
-    width: 100%;
-    height: 810px;
-    position: absolute;
-    top: 952px;
-    left: 0px;
-}
-
-#content-2 {
-    background-color: rgba(255, 255, 255, 0.904);
-    width: 50%;
-    height: auto;
-    margin: auto;
-    
-    border: 0px solid white;
-    border-radius: 5px;
-    padding: 0px 15px 0px 15px;
-}
-
-#main-line3 {
-    background-color: #58BCCA;    
-    position: absolute;
-    width: 100%;
-    height: 0px;
-    left: 0px;
-    top: 810px;
-
-    border: 1.5px solid #58BCCA;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-#main-thirdbg {
-    display: flex;
-    background-color:  #AADFE6;
-    position: absolute;
-    width: 100%;
-    height: 810px;
-    top: 1765px;
-}
-
-#form-field {
-    background-color: rgba(255, 255, 255, 0.904);
-    height: 500px;
-    margin: auto;
-    width: 50%;
-
-    border: 0px solid white;
-    border-radius: 5px;
-    padding: 0px 15px 0px 15px;
-}
-
-form {
-    display: flex;    
-    flex-flow: column;
-    align-items: center;
-}
-
-label {
-    margin: 10px 0px 10px 0px;
-    font-family: 'Architects Daughter', cursive;
-}
-
-::placeholder {
-    text-align: center;
-}
-
-input {
-    width: 500px;
-    height: 30px;
-   
-    border: solid 0px white;
-    border-radius: 15px;
-    box-shadow: 2px 2px 2px grey;
-    box-sizing: border-box;
-
-    margin-bottom: 35px;
-
-    outline: none;
-    text-align: center;
-}
-
-#submit-button {
-    color: white;
-    background-color: #58BCCA;
-    margin-top: 45px;
-}

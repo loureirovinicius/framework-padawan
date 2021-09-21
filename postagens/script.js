@@ -1,41 +1,42 @@
+// "number" é o argumento que ela recebe na última função do script e é o que determinará o url da página
 function post(number) {
     const url = `https://jsonplaceholder.typicode.com/users/${number}/posts`
     fetch(url)
     .then(response => response.json())
     .then((postShowed) => {
-        const usertitle = postShowed[number]['title']
-        const postsDescription = postShowed[number]['body']
+        const usertitle = postShowed[number].title
+        const postsDescription = postShowed[number].title
         showResults(usertitle, postsDescription)
     })
 }
 
 function showResults(titleResult, postResult) {
-    const showTitleResult = (title) => {
+    const showTitleResult = () => {
         const listResults = document.getElementById('list')
         const listCreated = document.createElement('li')
-        listCreated.innerHTML = 'Título da postagem: ' + title
+        listCreated.innerHTML = `Título da postagem: ${titleResult}`
         listResults.appendChild(listCreated)
     }
 
-    const showCompletedResult = (post) => {
+    const showCompletedResult = () => {
         const listResults = document.getElementById('list')
         const listCreated = document.createElement('li')
-        listCreated.innerHTML = 'Postagem: ' + post
+        listCreated.innerHTML = `Postagem: ${postResult}`
         listResults.appendChild(listCreated)
     }
     
     list.innerHTML = ""
-    showTitleResult(titleResult)
-    showCompletedResult(postResult)  
+    showTitleResult()
+    showCompletedResult()  
 }
 
-
+// Principal mecanismo do site, é onde executa a função que possui a promise a ser resolvida e que mostrará os dados
 window.onload = () => {
     const searchUserField = document.getElementById('searchingFields')
     searchUserField.onkeyup = () => {
         if (searchUserField.value.length === 0 || searchUserField.value.length === 1) {
             if (searchUserField.value >= 1 && searchUserField.value <= 9) {
-                post(searchUserField.value)
+                post(searchUserField.value) // Recebe como argumento o valor do campo de input e mostrará os dados de determinada postagem
             }
         } else {
             window.alert('Você deve inserir um número entre 0 e 9')

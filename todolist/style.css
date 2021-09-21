@@ -1,19 +1,24 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
-body {
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+*, ::after, ::before {
     margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8728C7;
 }
 
 #header { 
     display: flex;
-    position: absolute;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    
     width: 100%;
     height: 135px;
-    left: 0px;
-    top: 0px;
     background: #ffffff;
 }
 
@@ -22,12 +27,9 @@ body {
     position: absolute;
     width: 100%;
     height: 0px;
-    left: 0px;
     top: 135px;
 
-    border: 2px solid #623D7A;
-    border-right: 0px;
-    border-left: 0px;   
+    border: 2px solid #623D7A;  
 }
 
 .links-container {
@@ -48,35 +50,39 @@ body {
 
 #main-firstbg {
     display: flex;
-    background-color: #8728C7;
-    position: absolute;
-    width: 100%;
-    height: 810px;
-    left: 0px;
-    top: 139px;
+    justify-items: center;
+    align-content: center;
+    margin: 30vh;
 }
 
 #content-1 {
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
     background-color: rgba(255, 255, 255, 0.904);
-    width: 50%;
-    height: auto;
+    width: 50vw;
     margin: auto;
     
     border: 0px solid white;
     border-radius: 5px;
-    padding: 0px 15px 0px 15px;
+    padding: 10px 15px 10px 15px;
+    box-shadow: 5px 5px 5px rgb(48, 18, 51);
 }
 
 h2 {
     text-align: center;
     font-family: 'Architects Daughter', cursive;
-    
+}
+
+p {
+    text-align: justify;   
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #searchingFields {
-    margin-bottom: 25px;
+    margin: 15px;
     width: 50%;
     align-self: center;
     
@@ -87,4 +93,8 @@ h2 {
     
     text-align: center;
     outline: none;
+}
+
+div > ul {
+    align-self: center;
 }
